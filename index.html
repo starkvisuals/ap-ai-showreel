@@ -1,0 +1,135 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI Content Studio | Anandi Productions</title>
+<meta name="description" content="AI-generated fashion lookbooks, campaign films, e-commerce video, product and food visuals from Anandi Productions, Mumbai.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<style>
+@font-face{font-family:"AP Display";src:url(assets/CodeProBold.otf) format("opentype");font-display:swap}
+:root{--bg:#0d0d0d;--ink:#231f20;--paper:#f4f1ea;--y:#fffc01;--sil:#b8b8b8;--line:#3a3a3a;--g:clamp(16px,4vw,64px)}
+*{box-sizing:border-box;margin:0}html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--paper);font:400 17px/1.55 Inter,Arial,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+img,video{display:block;width:100%;height:100%;object-fit:cover;background:#1a1a1a}
+h1,h2,h3{font-family:"AP Display",Inter,sans-serif;text-transform:uppercase;line-height:.95;font-weight:700;text-wrap:balance}
+.wedge{display:inline-block;width:0;height:0;border-left:14px solid var(--y);border-top:8px solid transparent;border-bottom:8px solid transparent;margin-right:14px}
+.eyebrow{font-size:13px;font-weight:600;letter-spacing:.22em;text-transform:uppercase;color:var(--sil);display:flex;align-items:center}
+.lede{font:italic 400 clamp(22px,2.6vw,38px)/1.2 "Instrument Serif",Georgia,serif;color:var(--sil);max-width:22em}
+section{padding:clamp(56px,9vw,140px) var(--g)}.wrap{max-width:1600px;margin:0 auto}
+.hero{position:relative;min-height:100svh;padding:0;display:flex;align-items:flex-end}
+.hero .panels{position:absolute;inset:0;display:grid;grid-template-columns:repeat(3,1fr)}
+.hero::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(13,13,13,.95),rgba(13,13,13,.15) 55%,rgba(13,13,13,.55))}
+.hero .in{position:relative;z-index:2;padding:var(--g);width:100%}
+.hero h1{font-size:clamp(56px,13.5vw,250px);letter-spacing:-.01em;margin:18px 0}
+.hero .top{position:absolute;z-index:2;top:var(--g);left:var(--g);right:var(--g);display:flex;justify-content:space-between;align-items:center}
+.hero .top img{width:clamp(160px,18vw,300px);height:auto;background:none;object-fit:contain}.hero .top span{color:var(--y);font-size:13px;font-weight:600;letter-spacing:.3em;text-transform:uppercase}
+.intro .lede{font-style:normal;color:var(--paper);font-size:clamp(30px,4.6vw,76px);line-height:1.1;max-width:18em}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,3vw,48px);margin-top:clamp(40px,6vw,96px)}
+.stats div{border-top:1px solid var(--line);padding-top:24px}.stats h3{font-size:clamp(26px,3.4vw,54px);margin-bottom:10px}.stats p{color:var(--sil)}
+.act{display:grid;gap:22px;margin-bottom:clamp(36px,5vw,80px)}.act h2{font-size:clamp(64px,15vw,260px)}
+.bleed{position:relative;margin:0 calc(var(--g)*-1);aspect-ratio:16/9;max-height:100svh;width:calc(100% + var(--g)*2)}
+.block{margin-top:clamp(56px,8vw,128px)}.cap{display:grid;gap:10px;margin-bottom:24px;max-width:46em}.cap h3{font-size:clamp(24px,3vw,44px)}.cap p{color:var(--sil)}
+.cut{position:relative;overflow:hidden;clip-path:polygon(0 0,calc(100% - 28px) 0,100% 28px,100% 100%,0 100%)}
+.g3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.g3 .cut{aspect-ratio:3/4}.g3 .cut:nth-child(2){margin-top:clamp(0px,4vw,64px)}
+.g4{display:grid;grid-template-columns:repeat(4,1fr);gap:0;margin:0 calc(var(--g)*-1)}.g4>*{aspect-ratio:2/3}
+.g22{display:grid;grid-template-columns:1fr 1fr;gap:0;margin:0 calc(var(--g)*-1)}.g22>*{aspect-ratio:16/9}
+.split{display:grid;grid-template-columns:1fr 1fr;gap:clamp(24px,5vw,96px);align-items:end}.split .tall{aspect-ratio:9/16;max-height:92svh;justify-self:end;width:auto;height:92svh;max-width:100%}
+.split h3.big{font-size:clamp(48px,9vw,160px)}
+.v3{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.v3 .cut{aspect-ratio:9/16}
+.list{display:grid;gap:0}.list div{border-top:1px solid var(--line);padding:22px 0}.list h3{font-size:clamp(20px,2.2vw,32px);margin-bottom:6px}.list p{color:var(--sil)}
+.pair{display:grid;grid-template-columns:1.9fr 1fr;gap:16px;align-items:start}.pair>.cut:first-child{aspect-ratio:16/9}.pair>.cut:last-child{aspect-ratio:3/4}
+.pair2{display:grid;grid-template-columns:1fr 1.9fr;gap:16px;align-items:start}.pair2>.cut{aspect-ratio:903/498}
+.duo{display:grid;grid-template-columns:1fr 1fr;gap:16px}.duo .cut{aspect-ratio:3/4}
+.tag{position:absolute;bottom:0;font-size:12px;font-weight:600;letter-spacing:.2em;text-transform:uppercase;padding:12px 18px;background:rgba(13,13,13,.75);color:var(--paper);z-index:3}.tag.tl{left:0}.tag.tr{right:0}.tag.y{background:var(--y);color:var(--ink)}
+.ba{position:relative;overflow:hidden;max-width:1200px;user-select:none;touch-action:pan-y}.ba>img{position:absolute;inset:0}
+.ba-top{position:absolute;inset:0;clip-path:inset(0 50% 0 0)}.ba-line{position:absolute;top:0;bottom:0;left:50%;width:2px;background:var(--y);z-index:2}
+.ba-line::after{content:"";position:absolute;top:50%;left:-21px;width:44px;height:44px;margin-top:-22px;border-radius:50%;background:var(--y)}
+.ba input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;z-index:4;margin:0}
+.tiles{display:grid;grid-template-columns:repeat(3,1fr);margin:0 calc(var(--g)*-1)}.tile{position:relative;aspect-ratio:32/27}
+.tile::after{content:"";position:absolute;inset:0;background:linear-gradient(to top,rgba(13,13,13,.92),rgba(13,13,13,.1) 60%)}
+.tile div{position:absolute;z-index:2;left:clamp(16px,2.4vw,40px);right:16px;bottom:clamp(16px,2.4vw,36px)}.tile h3{font-size:clamp(20px,2.6vw,44px);margin-bottom:6px}
+.steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px}.steps .cut{aspect-ratio:5/6;margin-bottom:18px}.steps b{position:absolute;left:0;bottom:0;background:var(--y);color:var(--ink);font:700 clamp(28px,3vw,52px)/1 "AP Display";padding:10px 18px;z-index:2}
+.steps h3{font-size:clamp(18px,1.9vw,30px);margin-bottom:8px}.steps p{color:var(--sil);font-size:15px}
+.close{background:var(--y);color:var(--ink)}.close h2{font-size:clamp(56px,12vw,210px);margin:clamp(32px,6vw,96px) 0}
+.close .row{display:grid;grid-template-columns:repeat(3,1fr);gap:clamp(20px,3vw,64px)}.close .row p{border-top:2px solid var(--ink);padding-top:20px;font-size:clamp(16px,1.5vw,24px)}
+.btn{display:inline-block;background:var(--ink);color:var(--y);font:700 clamp(16px,1.6vw,24px)/1 "AP Display";text-transform:uppercase;text-decoration:none;padding:22px 34px;clip-path:polygon(0 0,calc(100% - 16px) 0,100% 16px,100% 100%,0 100%)}
+a{color:inherit}
+@media(max-width:820px){.hero .panels{grid-template-columns:1fr}.hero .panels>*:not(:first-child){display:none}.stats,.close .row,.list{grid-template-columns:1fr}
+.g3{grid-template-columns:1fr 1fr}.g3 .cut:first-child{grid-column:span 2}.g3 .cut:nth-child(2){margin-top:0}.v3{gap:8px}.tile p{display:none}.tile{aspect-ratio:1/1}.g4{grid-template-columns:1fr 1fr}.g22,.split,.pair,.pair2,.duo{grid-template-columns:1fr}
+.split .tall{justify-self:stretch;height:auto;width:100%}.tiles{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style></head><body>
+<section class="hero"><div class="panels"><video class="" muted loop playsinline preload="none" poster="assets/kk3_still.jpg" data-src="assets/kk3.mp4" aria-label="Model in a pale blue saree with the pallu lifting in the wind"></video><video class="" muted loop playsinline preload="none" poster="assets/nimbooz_still_3.jpg" data-src="assets/nimbooz_liquid.mp4" aria-label="Lime wedges bursting through water"></video><video class="" muted loop playsinline preload="none" poster="assets/liquid_ice_still.jpg" data-src="assets/liquid_ice.mp4" aria-label="Amber liquid pouring over ice"></video></div>
+<div class="top"><img src="assets/logo-white-true.png" alt="Anandi Productions"><span>Showreel 2026</span></div>
+<div class="in"><p class="eyebrow"><span class="wedge"></span>Anandi Productions</p><h1>AI content<br>studio</h1><p class="lede" style="color:var(--paper)">Fashion. Film. Food and product.</p></div></section>
+
+<section class="intro"><div class="wrap"><p class="eyebrow" style="margin-bottom:28px"><span class="wedge"></span>Who we are</p>
+<p class="lede">Years of commercial shoots taught us how an image should be lit, cast and framed. We direct AI the same way.</p>
+<div class="stats"><div><h3>10 years</h3><p>hands-on in photography and production, Mumbai</p></div><div><h3>Cannes Silver Lion</h3><p>awarded to the studio</p></div><div><h3>PepsiCo · NCPA</h3><p>Lay's, Kurkure, Nimbooz, Doritos and more</p></div></div></div></section>
+
+<section id="fashion"><div class="wrap"><header class="act"><p class="eyebrow"><span class="wedge"></span>Act 01</p><h2>Fashion</h2><p class="lede">Lookbooks, campaign films and e-commerce for fashion brands.</p></header>
+<div class="bleed"><video class="" muted loop playsinline preload="none" poster="assets/fashion_montage_still.jpg" data-src="assets/fashion_montage.mp4" aria-label="A montage of AI fashion films"></video></div>
+<div class="block"><div class="cap"><h3>Pummy Walia lookbook</h3><p>Product and lifestyle frames for every look: front, three-quarter, back, detail and mood.</p></div>
+<div class="g3"><div class="cut"><img class="" src="assets/pwns31fix-05-mood.jpg" alt="Model in a sand linen shirt with black embroidery against stone pillars and blue sky" loading="lazy"></div><div class="cut"><img class="" src="assets/pwns14fix-05-mood.jpg" alt="Model in a pink organza shirt with floral appliqué and sun flare" loading="lazy"></div><div class="cut"><img class="" src="assets/pwsd-cs-038b-05-mood.jpg" alt="Model in a pink organza kurta with floral embroidery against a white wall" loading="lazy"></div></div>
+<div class="g3" style="margin-top:16px"><div class="cut"><img class="" src="assets/pwns9-05-mood.jpg" alt="Model in white standing in a sunlit stone arcade" loading="lazy"></div><div class="cut"><img class="" src="assets/dp001fix-05-mood.jpg" alt="Model in a blue checked co-ord set in a terracotta courtyard" loading="lazy"></div><div class="cut"><img class="" src="assets/pwns12-05-mood.jpg" alt="Model in a white shirt with a beaded cuff, hair in motion" loading="lazy"></div></div></div>
+<div class="block"><div class="cap"><h3>RQ lookbook</h3><p>Studio set, heavy embellishment. The beadwork holds from front, side and back.</p></div>
+<div class="g4"><img class="" src="assets/rq_paisley_front.jpg" alt="Model in a black gown with pearl paisley embroidery" loading="lazy"><img class="" src="assets/rq_grid_close.jpg" alt="Close view of a black mini dress with a crystal grid" loading="lazy"><img class="" src="assets/rq_pearl_walk.jpg" alt="Model in a pearl-beaded trouser suit mid-stride" loading="lazy"><img class="" src="assets/rq_grid_back.jpg" alt="Back view of the crystal grid mini dress" loading="lazy"></div></div>
+<div class="block"><div class="cap"><h3>Kalash Kriti campaign film</h3><p>Wide, drape in motion, fabric macro and jewellery, all generated.</p></div>
+<div class="g22"><video class="" muted loop playsinline preload="none" poster="assets/kk1_still.jpg" data-src="assets/kk1.mp4" aria-label="Close portrait with emerald and diamond earrings"></video><video class="" muted loop playsinline preload="none" poster="assets/kk2_still.jpg" data-src="assets/kk2.mp4" aria-label="Model in a red patola drape in a misty field"></video><video class="" muted loop playsinline preload="none" poster="assets/kk3_still.jpg" data-src="assets/kk3.mp4" aria-label="Pale blue saree lifting in the wind"></video><video class="" muted loop playsinline preload="none" poster="assets/kk4_still.jpg" data-src="assets/kk4.mp4" aria-label="Ivory embroidered saree in a golden field"></video></div></div>
+<div class="block split"><div><p class="eyebrow" style="margin-bottom:20px"><span class="wedge"></span>AI reel</p><h3 class="big">House of NSJ</h3><p class="lede" style="margin-top:20px">One car, four looks, one reel.</p></div><div class="cut tall"><video class="" muted loop playsinline preload="none" poster="assets/nsj_poster.jpg" data-src="assets/nsj.mp4" aria-label="House of NSJ reel: looks filmed in the back seat of a vintage car"></video></div></div>
+<div class="block"><div class="cap"><h3>Product shots for the website</h3><p>Fully AI generated from the real garment. 100% garment replication: print, embroidery and cut.</p></div>
+<div class="v3"><div class="cut"><video class="" muted loop playsinline preload="none" poster="assets/ecom1_still.jpg" data-src="assets/ecom1.mp4" aria-label="Model turning in a black shirt dress with red embroidery"></video></div><div class="cut"><video class="" muted loop playsinline preload="none" poster="assets/ecom2_still.jpg" data-src="assets/ecom2.mp4" aria-label="Model turning in a teal dress with silver embroidery"></video></div><div class="cut"><video class="" muted loop playsinline preload="none" poster="assets/ecom3_still.jpg" data-src="assets/ecom3.mp4" aria-label="Two models walking in two-tone denim jackets"></video></div></div></div>
+<div class="block split" style="align-items:start"><div><div class="cap"><h3>All of it, for fashion brands</h3></div><div class="list"><div><h3>Character development</h3><p>Unique digital personas that embody your brand.</p></div><div><h3>Campaign art direction</h3><p>A cohesive aesthetic and narrative that captivates your audience.</p></div><div><h3>Campaign design</h3><p>Polished, multi-channel visuals that bring your vision to life.</p></div></div><p class="lede" style="margin-top:28px;color:var(--paper)">From concept to final assets, fully realised campaigns tailored to your brand.</p></div><div class="cut" style="aspect-ratio:3/4"><img class="" src="assets/pwns2-05-mood.jpg" alt="Close portrait of a model in a colour-block shirt with backlight" loading="lazy"></div></div>
+</div></section>
+
+<section id="film"><div class="wrap"><header class="act"><p class="eyebrow"><span class="wedge"></span>Act 02</p><h2>Film</h2><p class="lede">AI liquid films and format adaptation.</p></header>
+<div class="bleed"><video class="" muted loop playsinline preload="none" poster="assets/nimbooz_still_3.jpg" data-src="assets/nimbooz_liquid.mp4" aria-label="Nimbooz AI liquid film: lime wedges bursting through water against a blue sky"></video></div>
+<div class="block" style="margin-top:28px"><div class="cap"><h3>Nimbooz AI liquid film</h3><p>Prompted shot by shot from a full shot list. Lime, water and light, fully generated.</p></div></div>
+<div class="block"><div class="cap"><h3>One film, every format</h3><p>Not a crop. AI extends the sky and ground so the full scene stays in frame.</p></div>
+<div class="pair"><div class="cut"><video class="" muted loop playsinline preload="none" poster="assets/doritos_original_16x9_still.jpg" data-src="assets/doritos_original_16x9.mp4" aria-label="Doritos Loaded Nachos booth film, original 16:9"></video><span class="tag tl">Original · 16:9</span></div><div class="cut"><video class="" muted loop playsinline preload="none" poster="assets/doritos_ai_adapt_3x4_still.jpg" data-src="assets/doritos_ai_adapt_3x4.mp4" aria-label="The same film extended by AI to a vertical frame"></video><span class="tag tl y">AI adapt · vertical</span></div></div></div>
+</div></section>
+
+<section id="product"><div class="wrap"><header class="act"><p class="eyebrow"><span class="wedge"></span>Act 03</p><h2>Food &amp; product</h2><p class="lede">Retouch, 3D, product and liquid for FMCG brands.</p></header>
+<div class="block" style="margin-top:0"><div class="cap"><h3>From studio plate to finished visual</h3><p>Same angle, same pour. AI adds the sky, the hand and the splash. Drag to compare.</p></div><div class="ba" style="aspect-ratio:3/2" data-ba>
+  <img class="" src="assets/retouch_after.jpg" alt="After: the same pour with sky, a hand and bigger splashes" loading="lazy"><div class="ba-top"><img class="" src="assets/retouch_before.jpg" alt="Before: studio shot of a bottle pouring amber liquid on a flat blue backdrop" loading="lazy"></div><div class="ba-line"></div>
+  <span class="tag tl">Before</span><span class="tag tr y">After</span>
+  <input type="range" min="0" max="100" value="50" aria-label="Drag to compare before and after"></div></div>
+<div class="block"><div class="cap"><h3>Bring back the detail</h3><p>AI rebuilds what the highlight burned out: the clear bottle, the condensation, the liquid line and the label.</p></div><div class="ba" style="aspect-ratio:1/1" data-ba>
+  <img class="" src="assets/detail_after.jpg" alt="After: the bottle transparent again with condensation and label" loading="lazy"><div class="ba-top"><img class="" src="assets/detail_before.jpg" alt="Before: the bottle blown out to flat white" loading="lazy"></div><div class="ba-line"></div>
+  <span class="tag tl">Before</span><span class="tag tr y">After</span>
+  <input type="range" min="0" max="100" value="50" aria-label="Drag to compare before and after"></div></div>
+<div class="block"><div class="cap"><h3>Built in 3D, finished with AI</h3><p>The 3D model locks the shape and the label. AI adds light, liquid and condensation.</p></div>
+<div class="pair2"><div class="cut"><img class="" src="assets/can_3d.jpg" alt="A 3D wireframe model of a drinks can" loading="lazy"><span class="tag tl">3D model</span></div><div class="cut"><img class="" src="assets/can_ai.jpg" alt="The finished can, chilled with condensation, pouring golden liquid" loading="lazy"><span class="tag tl y">AI final</span></div></div></div>
+<div class="block"><div class="bleed"><img class="" src="assets/loreal_hero_wide.jpg" alt="Shampoo bottle floating among iridescent bubbles on a lilac background" loading="lazy"></div>
+<div style="margin-top:28px"><div class="cap"><h3>One product, a full campaign set</h3><p>Hero, logo, label and top view from one product reference.</p></div></div>
+<div class="g3"><div class="cut"><img class="" src="assets/loreal_logo_closeup.jpg" alt="Close-up of the bottle cap and logo against white foam" loading="lazy"></div><div class="cut"><img class="" src="assets/loreal_label_closeup.jpg" alt="Macro of the bottle label with water droplets" loading="lazy"></div><div class="cut"><img class="" src="assets/loreal_cap_foam.jpg" alt="Top view of the bottle cap in lilac foam" loading="lazy"></div></div></div>
+<div class="block"><div class="cap"><h3>Liquid shots</h3><p>The shots that usually need a high-speed camera and a rig.</p></div>
+<div class="pair"><div class="cut"><video class="" muted loop playsinline preload="none" poster="assets/liquid_ice_still.jpg" data-src="assets/liquid_ice.mp4" aria-label="Amber liquid pouring over clear ice in macro"></video></div><div class="cut" style="aspect-ratio:16/9"><video class="" muted loop playsinline preload="none" poster="assets/liquid_can_still.jpg" data-src="assets/liquid_can.mp4" aria-label="A chilled can opening and pouring into a glass"></video></div></div></div>
+<div class="block"><div class="cap"><h3>Tabletop, generated</h3><p>Splash, condensation and macro texture, with no shoot day.</p></div>
+<div class="pair"><div class="cut" style="aspect-ratio:4/3"><img class="" src="assets/tt_corona.jpg" alt="A beer pour splashing into a salt-rimmed glass against a sunlit sky" loading="lazy"></div><div class="cut" style="aspect-ratio:16/9"><img class="" src="assets/tt_cherry.jpg" alt="Macro of a wet red cherry with cream running down it" loading="lazy"></div></div></div>
+<div class="block"><div class="cap"><h3>One product, two worlds</h3><p>A hard-light studio hero and an ingredient story, with the label exact in both.</p></div>
+<div class="duo"><div class="cut"><img class="" src="assets/tt_lotion_dark.jpg" alt="A pink body lotion bottle on a dark ledge with a hard beam of light" loading="lazy"></div><div class="cut"><img class="" src="assets/tt_lotion_ingredients.jpg" alt="The same bottle with cream, coffee beans, cocoa butter, vanilla and flowers" loading="lazy"></div></div></div>
+</div></section>
+
+<section id="process"><div class="wrap"><p class="eyebrow" style="margin-bottom:20px"><span class="wedge"></span>How we work</p><div class="cap"><h3>Run like a shoot</h3></div>
+<div class="steps"><div><div class="cut"><img class="" src="assets/can_3d.jpg" alt="3D model of a can" loading="lazy"><b>01</b></div><h3>Brief and references</h3><p>Product, garment and brand references, plus the look you want.</p></div>
+<div><div class="cut"><img class="" src="assets/pwns31fix-05-mood.jpg" alt="Fashion look development frame" loading="lazy"><b>02</b></div><h3>Look development</h3><p>Casting, light and location set before anything is generated.</p></div>
+<div><div class="cut"><img class="" src="assets/nimbooz_still_3.jpg" alt="Lime and water frame" loading="lazy"><b>03</b></div><h3>Generate and select</h3><p>Shot-by-shot prompting, then a hard edit down to the best frames.</p></div>
+<div><div class="cut"><img class="" src="assets/can_ai.jpg" alt="Finished can image" loading="lazy"><b>04</b></div><h3>Retouch and deliver</h3><p>Post work and finishing, delivered in the formats you need.</p></div></div></div></section>
+
+<section id="make" style="padding-top:0"><div class="wrap"><p class="eyebrow" style="margin-bottom:28px"><span class="wedge"></span>What we make</p>
+<div class="tiles">
+<div class="tile"><img class="" src="assets/loreal_label_closeup.jpg" alt="Product label macro" loading="lazy"><div><h3>Product images</h3><p>Catalogue and e-commerce frames.</p></div></div>
+<div class="tile"><img class="" src="assets/loreal_hero_wide.jpg" alt="Floating bottle hero" loading="lazy"><div><h3>Hero visuals</h3><p>One high-resolution image built to carry a launch.</p></div></div>
+<div class="tile"><img class="" src="assets/tt_corona.jpg" alt="Beer pour key visual" loading="lazy"><div><h3>Campaign visuals</h3><p>4K key visuals for digital, print and outdoor.</p></div></div>
+<div class="tile"><img class="" src="assets/rq_pearl_walk.jpg" alt="Lookbook frame" loading="lazy"><div><h3>Lookbooks</h3><p>Full collections, cast and styled look by look.</p></div></div>
+<div class="tile"><video class="" muted loop playsinline preload="none" poster="assets/nsj_poster.jpg" data-src="assets/nsj.mp4" aria-label="Fashion reel"></video><div><h3>Reels</h3><p>Short vertical films for social.</p></div></div>
+<div class="tile"><video class="" muted loop playsinline preload="none" poster="assets/kk2_still.jpg" data-src="assets/kk2.mp4" aria-label="Campaign film"></video><div><h3>Films</h3><p>Boarded and generated shot by shot.</p></div></div>
+</div></div></section>
+
+<section class="close"><div class="wrap"><p style="font:700 clamp(16px,1.6vw,28px)/1 'AP Display';letter-spacing:.06em;text-transform:uppercase">Anandi Productions</p>
+<h2>Let's make yours.</h2><p style="margin-bottom:clamp(40px,6vw,96px)"><a class="btn" href="mailto:hello@anandiproductions.com?subject=AI%20content%20brief">Send a brief</a></p>
+<div class="row"><p><b>Harnesh Joshi</b><br>Founder and Creative Director</p><p><a href="mailto:hello@anandiproductions.com">hello@anandiproductions.com</a></p><p>233 A to Z Industrial Estate, GK Marg, Lower Parel, Mumbai</p></div></div></section>
+<script>
+const io=new IntersectionObserver(es=>es.forEach(e=>{const v=e.target;if(e.isIntersecting){if(!v.src){v.src=v.dataset.src}v.play().catch(()=>{})}else v.pause()}),{rootMargin:"200px 0px",threshold:.05});
+document.querySelectorAll("video[data-src]").forEach(v=>io.observe(v));
+document.querySelectorAll("[data-ba]").forEach(b=>{const r=b.querySelector("input"),t=b.querySelector(".ba-top"),l=b.querySelector(".ba-line");r.addEventListener("input",()=>{t.style.clipPath=`inset(0 ${100-r.value}% 0 0)`;l.style.left=r.value+"%"})});
+</script></body></html>
